@@ -35,4 +35,23 @@
 
 ### ArrayList vs LinkedList
 
-1. 
+
+## Queue
+
+Queue is an Interface. Its follow FIFO [First In First Out] order.
+
+The most common implementation classes are **PriorityQueue** and **LinkedList** both of the classes are **not thread-safe.** **PriorityBlockingQueue** is a **thread-safe** class.
+
+**Operations on Queue**
+
+| Operations         | Description                               | Exception                                |
+|--------------------|-------------------------------------------|------------------------------------------|
+| boolean add(E e)   | add element to the Back/Rear of the Queue | IllegalStateException - if queue is full |
+| boolean offer(E e) |                                           |                                          |
+| E remove()         |                                           |                                          |
+| E poll()           |                                           |                                          |
+| E element()        |                                           |                                          |
+| E peek()           |                                           |                                          |
+
+
+### BlockingQueue
