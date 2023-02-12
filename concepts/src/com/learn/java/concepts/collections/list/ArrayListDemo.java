@@ -1,6 +1,7 @@
 package com.learn.java.concepts.collections.list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListDemo {
@@ -16,5 +17,21 @@ public class ArrayListDemo {
         System.out.println(list);
         list.remove(2);
         System.out.println(list);
+
+        List<String> nameList = new ArrayList<>();
+        nameList.add("Tokyo");
+        nameList.add("Amsterdam");
+        nameList.add("Austin");
+        nameList.add("Berlin");
+
+        Iterator<String> iterator = nameList.iterator();
+        while (iterator.hasNext()) {
+            String city = iterator.next();
+            if (city.startsWith("T")) {
+                iterator.remove();
+                //nameList.remove(city);
+            }
+        }
+        System.out.println(nameList);
     }
 }

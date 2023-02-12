@@ -14,5 +14,8 @@ public class PeriodDemo {
         Period period = Period.between(history, now);
         System.out.println(period);
         System.out.println(period.getYears());
+
+        Period period1 = Period.of(0,0,0);
+        System.out.println(period1);
     }
 }
